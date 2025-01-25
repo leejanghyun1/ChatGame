@@ -16,8 +16,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1051.7999
-    y: 217.59961
+    x: 978.7999
+    y: 197.59961
     width: 190
     height: 115
   IsDragging: 0
@@ -43,21 +43,21 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 177.99994
-    y: 74.59961
+    x: 87.99994
+    y: 55.59961
     width: 230
     height: 270
   IsDragging: 0
   IsSelected: 0
   _sentence:
-    CharacterName: mob_01
+    CharacterName: mob_06
     Text: Hello this is demo Dialog Node Graph
-    CharacterSprite: {fileID: 21300000, guid: ccf12b34f24ac4b6ab631a6a8bdb424a, type: 3}
+    CharacterSprite: {fileID: 21300000, guid: 69e6ffed579634d4990df398b046d8b4, type: 3}
   ParentNode: {fileID: 0}
   ChildNode: {fileID: 1654370894839613155}
   _isExternalFunc: 1
-  _externalFunctionName: Test
-  _spriteName: mob_01
+  _externalFunctionName: TestFunction
+  _spriteName: mob_06
 --- !u!114 &-1675696131251093465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,8 +74,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 900.99927
-    y: -74.6001
+    x: 827.99927
+    y: -94.6001
     width: 230
     height: 270
   IsDragging: 0
@@ -105,8 +105,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 569.5996
-    y: 400.99994
+    x: 496.5996
+    y: 380.99994
     width: 230
     height: 270
   IsDragging: 0
@@ -136,8 +136,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 629.9995
-    y: -126.3999
+    x: 556.9995
+    y: -146.3999
     width: 230
     height: 270
   IsDragging: 0
@@ -190,8 +190,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 1267
-    y: 192.7998
+    x: 1194
+    y: 172.7998
     width: 230
     height: 270
   IsDragging: 0
@@ -221,8 +221,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 439.79962
-    y: 184
+    x: 366.79962
+    y: 164
     width: 190
     height: 135
   IsDragging: 0
@@ -250,8 +250,8 @@ MonoBehaviour:
   NodeGraph: {fileID: 11400000}
   Rect:
     serializedVersion: 2
-    x: 886.5996
-    y: 390.60004
+    x: 813.5996
+    y: 370.60004
     width: 230
     height: 270
   IsDragging: 0
