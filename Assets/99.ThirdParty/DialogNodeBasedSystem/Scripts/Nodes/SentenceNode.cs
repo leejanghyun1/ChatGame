@@ -23,7 +23,6 @@ namespace cherrydev
 
         [Space(10)]
         [Header("Sprite Path Handling")]
-        [SerializeField] private string _spriteName; // 새로 추가된 스프라이트 경로
         private const string SpriteBasePath = "Assets/01.Resources/03.portrait/"; // 기본 경로
         private const string SpriteExtension = ".png"; // 파일 확장자
 
@@ -63,7 +62,7 @@ namespace cherrydev
         /// </summary>
         public override void Draw(GUIStyle nodeStyle, GUIStyle labelStyle)
         {
-            base.Draw(nodeStyle, labelStyle);
+            base.Draw(nodeStyle, labelStyle);  
 
             GUILayout.BeginArea(Rect, nodeStyle);
             EditorGUILayout.LabelField("Sentence Node", labelStyle);
@@ -109,20 +108,20 @@ namespace cherrydev
         private void DrawCharacterSpritePathField()
         {
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField($"Sprite Path ", GUILayout.Width(LabelFieldSpace));
-            _spriteName = EditorGUILayout.TextField(_spriteName, GUILayout.Width(TextFieldWidth));
-            Rect.width = 230f;
-            if (GUILayout.Button("Load"))
+
+            // Load 버튼만 표시
+            if (GUILayout.Button("Load Sprite", GUILayout.Width(100)))
             {
                 LoadSpriteFromPath();
             }
+
             EditorGUILayout.EndHorizontal();
 
-            // 스프라이트 미리보기와 크기 조정
+            // 스프라이트 미리보기
             if (_sentence.CharacterSprite != null)
             {
                 GUILayout.Label(_sentence.CharacterSprite.texture, GUILayout.Width(100), GUILayout.Height(100));
-                Rect.height = Mathf.Max(Rect.height, 270f); // 노드 크기를 동적으로 확장
+                Rect.height = Mathf.Max(Rect.height, 270f); // 노드 크기를 확장
             }
         }
 
@@ -132,7 +131,7 @@ namespace cherrydev
         private void LoadSpriteFromPath()
         {
             // 입력된 파일 이름을 기반으로 전체 경로 생성
-            string fullPath = $"{SpriteBasePath}{_spriteName}{SpriteExtension}";
+            string fullPath = $"{SpriteBasePath}{_sentence.CharacterName}{SpriteExtension}";
 
             if (string.IsNullOrEmpty(fullPath))
             {
